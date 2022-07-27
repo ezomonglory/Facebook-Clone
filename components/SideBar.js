@@ -20,7 +20,7 @@ function SideBar() {
 	const { data: session } = useSession();
 
 	return (
-		<div className='p-2 mt-5 sm:inline max-w-[600px] xl:min-w-[300px] hidden'>
+		<div className='p-2 mt-5 sm:inline max-w-[600px] xl:min-w-[300px] hidd'>
 			{/* <Image src="/image/" width={30} height={30}/> */}
 			{/* <SideBarRow src="/image/fb.png" title="Glory Ezomon" /> */}
 			<SideBarRow src={session.user.image} title={session.user.name} />
