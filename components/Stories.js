@@ -1,49 +1,43 @@
 import React from "react";
 import StoryCard from "./StoryCard";
-
+import { useSession } from "next-auth/react";
 const stories = [
 	{
 		name: "Ezomon Glory",
-		// src: "https://links.papareact.com/zof",
-        src: "/image/fb.png",
-		// profile: "https://links.papareact.com/lv4",
-        profile: "/image/fb.png",
+		src: "https://links.papareact.com/zof",        
+		profile: "https://links.papareact.com/lv4",
 	},
 
 	{
 		name: "Elon Musk",
-		// src: "https://links.papareact.com/zof",
-        src: "/image/fb.png",
-		// profile: "https://links.papareact.com/lv4",
-        profile: "/image/fb.png",
+		src: "https://links.papareact.com/4zn",        
+		profile: "https://links.papareact.com/kxk",        
 	},
 
 	{
 		name: "Jeff Bezos",
-		// src: "https://links.papareact.com/k2j",
-        src: "/image/fb.png",
-		// profile: "https://links.papareact.com/f0p",
-        profile: "/image/fb.png",
+		src: "https://links.papareact.com/k2j",
+		profile: "https://links.papareact.com/f0p",
+
 	},
 
 	{
 		name: "Mark Zuckerberg",
-		// src: "https://links.papareact.com/xql",
-        src: "/image/fb.png",
-		// profile: "https://links.papareact.com/snf",
-        profile: "/image/fb.png",
+		src: "https://links.papareact.com/xql",
+		profile: "https://links.papareact.com/snf",
+
 	},
 
 	{
 		name: "Bill Gates",
-		// src: "https://links.papareact.com/4u4",
-        src: "/image/fb.png",
-		// profile: "https://links.papareact.com/zvy",
-        profile: "/image/fb.png",
+		src: "https://links.papareact.com/4u4",
+		profile: "https://links.papareact.com/zvy",
+
 	},
 ];
 
 function Stories() {
+    const { data: session } = useSession();
 	return (
 		<div className='flex justify-center space-x-3 mx-auto'>
 			{stories.map((story) => {
