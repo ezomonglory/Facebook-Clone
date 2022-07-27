@@ -14,7 +14,7 @@ function StoryCard({ name, src, profile }) {
         />
 
         <Image 
-        className='object-cover filter brightness-75 lg:rounded-3xl rounded-full '
+        className='object-cover filter  lg:rounded-3xl rounded-full group-hover:brightness-75 '
         src={src}
         width={100}
         height={100}
