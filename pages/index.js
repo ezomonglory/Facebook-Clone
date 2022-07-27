@@ -19,7 +19,7 @@ export default function Home({ session }) {
 			<Header />
 			<main className="flex">
 				{/* sideBar */}
-				{/* <SideBar /> */}
+				<SideBar />
 				{/* Feed that is the center */}
 				{/* <Feed /> */}
 				{/* widget */}
