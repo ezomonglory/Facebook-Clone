@@ -11,7 +11,7 @@ export default function Home({ session }) {
 	if (!session) return <Login />;
 
 	return (
-		<div className="bg-gray-100 h-scre">
+		<div className="bg-gray-100 h-screen">
 			<Head>
 				<title>Facebook</title>
 			</Head>
