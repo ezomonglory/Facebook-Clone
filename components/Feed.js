@@ -7,7 +7,7 @@ import Stories from './Stories'
 function Feed( ) {
   return (
     <div className='flex-grow flex h-screen pb-44  pt-6 sm:mr-4 xl:mr-40 overflow-y-auto scrollbar-hide overflow-x-none'>
-        <div className='mx-auto max-w-full md:max-w-lg lg:max-w-2xl min-w-full'>
+        <div className='mx-auto max-w-full md:max-w-lg lg:max-w-2xl min-w-ful'>
             {/* stories */}
             <Stories />
             {/* input box */}
