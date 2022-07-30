@@ -4,8 +4,8 @@ import { useSession } from "next-auth/react";
 const stories = [
 	{
 		name: "Ezomon Glory",
-		src: "https://links.papareact.com/zof",        
-		profile: "https://links.papareact.com/lv4",
+		src: "/image/Eg.jpg",        
+		profile: "/image/E.g.jpg",
 	},
 
 	{
@@ -22,7 +22,7 @@ const stories = [
 	},
 
 	{
-		name: "Mark Zuckerberg",
+		name: "Mark Zucker...",
 		src: "https://links.papareact.com/xql",
 		profile: "https://links.papareact.com/snf",
 

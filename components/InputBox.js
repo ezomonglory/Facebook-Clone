@@ -63,6 +63,7 @@ function InputBox() {
 		reader.onload = (readerEvent) => {
 			setImageToPost(readerEvent.target.result);
 		};
+		inputRef.current.focus()
 	};
 
 	const removeImage = () => {
@@ -85,7 +86,7 @@ function InputBox() {
 					<input
 						className='rounded-full h-10 bg-gray-100 outline-none px-5 flex-grow'
 						type='text'
-						placeholder={`whats on your main ${session.user.name}`}
+						placeholder={`whats on your mind ${session.user.name}`}
 						ref={inputRef}
 					/>
 
