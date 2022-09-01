@@ -4,6 +4,7 @@ import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../firebase";
 import {  query, orderBy } from "firebase/firestore";
 import { collection } from "firebase/firestore";
+import Loader from "./Loader";
 
 function Posts() {    
 	const [vaues] = useCollection(		
@@ -42,11 +43,7 @@ function Posts() {
         
 
     } else {
-        return <div className="flex justify-center items-center">
-        <div className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full text-blue-500 mt-10 border-blue-500 border-t-0 border-r-0" role="status">
-          <span className="visually-hidden bg-blue-500"></span>
-        </div>
-      </div>
+        return <div className="relative w-full pt-[20%]"><Loader /></div>
     }	   
 
 }

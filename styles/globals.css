@@ -16,3 +16,211 @@
 		display: none;
 	}
 }
+
+.bg{
+	background-color: rgba(46, 43, 43, 0.54);
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.25;
+    }
+}
+
+
+.bar1 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;
+	top:0;	
+	right:19px;
+	animation-name: fade;
+	background-color: black;
+    transform: rotate(0deg) ;
+    -webkit-transform: rotate(0deg) ;
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+.bar2 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;
+	top:2px;
+	right:12px;
+	background-color: black;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    animation-delay: -0.9167s;
+    -webkit-animation-delay: -0.9167s;
+}
+
+.bar3 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;
+	top: 8px;
+	right: 7px;
+	background-color: black;
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    animation-delay: -0.833s;
+    -webkit-animation-delay: -0.833s;
+}
+
+.bar4 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;
+	top:15px;
+	right:5px;
+	background-color: black;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    animation-delay: -0.7497s;
+    -webkit-animation-delay: -0.7497s;
+}
+
+.bar5 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;
+	bottom: 8px;
+	right: 7px;
+	background-color: black;
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    animation-delay: -0.667s;
+    -webkit-animation-delay: -0.667s;
+}
+
+.bar6 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;
+	bottom:2px;
+	right:12px;
+	background-color: black;
+    transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    animation-delay: -0.5837s;
+    -webkit-animation-delay: -0.5837s;
+}
+
+.bar7 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;
+	bottom:0px;	
+	right:19px;
+	background-color: black;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+}
+
+.bar8 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;	
+	bottom:2px;
+	left:12px;
+	background-color: black;
+    transform: rotate(210deg) ;
+    -webkit-transform: rotate(210deg) ;
+    animation-delay: -0.4167s;
+    -webkit-animation-delay: -0.4167s;
+}
+
+.bar9 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;
+	bottom:8px;
+	left:7px;
+	background-color: black;
+    transform: rotate(240deg);
+    -webkit-transform: rotate(240deg);
+    animation-delay: -0.333s;
+    -webkit-animation-delay: -0.333s;
+}
+
+.bar10 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;
+	top:15px;
+	left:5px;
+	background-color: black;
+    transform: rotate(270deg) ;
+    -webkit-transform: rotate(270deg);
+    animation-delay: -0.2497s;
+    -webkit-animation-delay: -0.2497s;
+}
+
+.bar11 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;
+	top: 8px;
+	left: 7px;
+	background-color: black;
+    transform: rotate(300deg) ;
+    -webkit-transform: rotate(300deg) ;
+    animation-delay: -0.167s;
+    -webkit-animation-delay: -0.167s;
+}
+
+.bar12 {
+	width:2px;
+	height:8px;
+	animation-name: fade;
+	 animation: fade 1s linear infinite;
+    -webkit-animation: fade 1s linear infinite;
+	animation-iteration-count: infinite;
+	top:2px;
+	left:12px;
+	background-color: black;
+    transform: rotate(330deg) ;
+    -webkit-transform: rotate(330deg);
+    animation-delay: -0.0833s;
+    -webkit-animation-delay: -0.0833s;
+}

@@ -8,23 +8,32 @@ import Feed from "../components/Feed";
 import Widget from "../components/Widget";
 import { collection, getDocs, orderBy } from "firebase/firestore";
 import { db } from "../firebase";
+import { useState } from "react";
+import Modal from "../components/Modal";
 
-export default function Home({ session}) {
-	
+export default function Home({ session }) {
+	const [show, setShow] = useState(false);
 	if (!session) return <Login />;
 
 	return (
-		<div className='bg-gray-100 h-screen'>
+		<div className='bg-gray-100 h-full'>
 			<Head>
 				<title>Facebook</title>
 			</Head>
 
 			<Header />
-			<main className='flex'>
+			<main className='flex relatve w-full '>
+				{show ? (
+					<div className='absolute mx-auto w-full  bg h-full pt-[10%] z-40'>
+						<Modal setShow={setShow} />
+					</div>
+				) : (
+					""
+				)}
 				{/* sideBar */}
 				<SideBar />
 				{/* Feed that is the center */}
-				<Feed  />
+				<Feed setShow ={setShow} />
 				{/* widget */}
 				<Widget />
 			</main>
@@ -39,7 +48,7 @@ export async function getServerSideProps(context) {
 				context.req,
 				context.res,
 				authOptions,
-			),			
+			),
 		},
 	};
 }

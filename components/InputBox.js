@@ -13,8 +13,9 @@ import {
 	doc,
 } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import Modal from "./Modal";
 
-function InputBox() {
+function InputBox({ setShow }) {
 	const inputRef = useRef();
 	const filePickerRef = useRef();
 	const { data: session } = useSession();
@@ -31,12 +32,12 @@ function InputBox() {
 			email: session.user.email,
 			image: session.user.image,
 			timeStamp: serverTimestamp(),
-			time:new Date(),
+			time: new Date(),
 		};
 
 		addDoc(collection(db, "Posts"), docData).then((ele) => {
 			const docRef = doc(db, "Posts", ele.id);
-            
+
 			if (imageToPost) {
 				const storageRef = ref(storage, ele.id);
 				uploadBytes(storageRef, imageUpload).then(() => {
@@ -63,7 +64,7 @@ function InputBox() {
 		reader.onload = (readerEvent) => {
 			setImageToPost(readerEvent.target.result);
 		};
-		inputRef.current.focus()
+		inputRef.current.focus();
 	};
 
 	const removeImage = () => {
@@ -71,7 +72,7 @@ function InputBox() {
 		setImageUpload("");
 	};
 	return (
-		<div className='bg-white p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6'>
+		<div className='bg-white p-2 relative rounded-2xl shadow-md text-gray-500 font-medium mt-6'>
 			<div className='flex space-x-1 sm:space-x-4 p-0 sm:p-4 items-center '>
 				<Image
 					width={40}
@@ -84,15 +85,12 @@ function InputBox() {
 				<form className='flex flex-1'>
 					{/* session user.name gats they here */}
 					<input
-						className='rounded-full h-10 bg-gray-100 outline-none px-5 flex-grow'
-						type='text'
-						placeholder={`whats on your mind ${session.user.name}`}
+						className='rounded-full h-10 cursor-pointer bg-gray-100 outline-none px-5 flex-grow'
+						// type='text'
+						placeholder={`whats on your mind ${session.user.name} ?`}
 						ref={inputRef}
+						onClick={() => setShow(true)}
 					/>
-
-					<button className='hidden' onClick={sendForm} type='submit'>
-						Submit
-					</button>
 				</form>
 
 				{imageToPost && (
@@ -106,7 +104,7 @@ function InputBox() {
 				)}
 			</div>
 
-			<div className='flex p-3 justify-evenly border-t'>
+			<div className='flex p-3 justify-evenly border-t cursor-pointer' onClick={() => setShow(true)}>
 				<div className='inputIcon'>
 					<VideoCameraIcon className=' text-red-600 h-7 ' />
 					<p className='text-xs sm:text-sm'>Live Video</p>
@@ -114,7 +112,7 @@ function InputBox() {
 
 				<div
 					className='inputIcon'
-					onClick={() => filePickerRef.current.click()}
+					// onClick={() => filePickerRef.current.click()}
 				>
 					<CameraIcon className=' text-green-600 h-7 ' />
 					<p className='text-xs sm:text-sm xl:text-base'> Photo/Video</p>

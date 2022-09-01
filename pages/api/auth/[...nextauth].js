@@ -9,7 +9,7 @@ export const  authOptions= {
       clientSecret: process.env.FACEBOOK_SECRET
     }),
   ],
-  secret:process.env.NEXTAUTH_SECRET
+  // secret:process.env.NEXTAUTH_SECRET
 }
 
 

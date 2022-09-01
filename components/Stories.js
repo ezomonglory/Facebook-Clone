@@ -4,7 +4,7 @@ import { useSession } from "next-auth/react";
 const stories = [
 	{
 		name: "Ezomon Glory",
-		src: "/image/Eg.jpg",        
+		src: "/image/eg.jpg",        
 		profile: "/image/E.g.jpg",
 	},
 

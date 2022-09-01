@@ -5,7 +5,7 @@ function StoryCard({ name, src, profile }) {
   return (
     <div className='relative h-14 w-14 md:w-20 md:h-20 lg:w-32 lg:h-56  cursor-pointer overflox-x p-3 group lg:rounded-3xl rounded-full hover:scale-110'>
         <Image
-        className='opacity-0 lg:opacity-100 absolute rounded-full z-50 top-10 '
+        className='opacity-0 lg:opacity-100 absolute rounded-full z-30 top-10 '
         src={profile}
         width={40}
         height={40}
