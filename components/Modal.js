@@ -90,7 +90,7 @@ function Modal({ setShow }) {
 
 
 	return (
-		<div className={` md:w-[80%] w-full lg:w-[40%] mx-auto my-auto bg-white rounded-md z-40 p-4 ${photo ? "-mt-20" : ""}`}>
+		<div className={` md:w-[80%] w-[95%] lg:w-[40%] mx-auto my-auto bg-white rounded-md z-40 p-4 ${photo ? "-mt-20" : ""}`}>
 			<div className='flex items-center border border-b-gray-300 border-transparent pb-2'>
 				<div className='text-black w-11/12 text-lg font-bold  text-center '>
 					Create Post{" "}
