@@ -175,7 +175,7 @@ function Modal({ setShow }) {
 					}}
 				>
 					<p>Add to your post</p>
-					<div className='flex gap-2'>
+					<div className='flex gap-2 items-center'>
 						<CameraIcon className=' text-green-600 h-7 ' />
 						<p className='text-xs sm:text-sm xl:text-base'> Photo/Video</p>
 					</div>
