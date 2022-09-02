@@ -84,13 +84,13 @@ function InputBox({ setShow }) {
 
 				<form className='flex flex-1'>
 					{/* session user.name gats they here */}
-					<input
-						className='rounded-full h-10 cursor-pointer bg-gray-100 outline-none px-5 flex-grow'
-						// type='text'
-						placeholder={`whats on your mind ${session.user.name} ?`}
-						ref={inputRef}
+					<div
+						className='rounded-full h-10 cursor-pointer bg-gray-100 outline-none px-5 flex-grow py-2'
 						onClick={() => setShow(true)}
-					/>
+					>
+						{" "}
+						whats on your mind {session.user.name} ?
+					</div>
 				</form>
 
 				{imageToPost && (
@@ -104,7 +104,10 @@ function InputBox({ setShow }) {
 				)}
 			</div>
 
-			<div className='flex p-3 justify-evenly border-t cursor-pointer' onClick={() => setShow(true)}>
+			<div
+				className='flex p-3 justify-evenly border-t cursor-pointer'
+				onClick={() => setShow(true)}
+			>
 				<div className='inputIcon'>
 					<VideoCameraIcon className=' text-red-600 h-7 ' />
 					<p className='text-xs sm:text-sm'>Live Video</p>
