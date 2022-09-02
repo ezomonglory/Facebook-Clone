@@ -30,7 +30,7 @@ function Modal({ setShow }) {
 		const docData = {
 			message: inputRef.current.value,
 			name: session.user.name,
-			email: session.user.email,
+			// email: session.user.email,
 			image: session.user.image,
 			timeStamp: serverTimestamp(),
 			time:new Date(),
